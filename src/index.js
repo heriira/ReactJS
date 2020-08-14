@@ -1,14 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import Home from "./container/Home/Home";
+
+/**
+ * STATELESS COMPONENT
+ * const Hello = () => {
+ * return <p>Hello, ini adalah stateless component</p>;
+ * };
+ */
+
+/**
+ * STATEFULL COMPONENT
+ * class HelloWorld extends React.Component {
+ * render() {
+ * return <p>Hello, ini adalah stateFull component</p>;
+ * }
+ * }
+ */
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Home />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
